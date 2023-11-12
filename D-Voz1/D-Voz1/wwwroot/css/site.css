@@ -23,7 +23,9 @@ body {
 }
 
 .display-direita {
-    display: flow;
+    display: flex;
+    flex-direction:row;
+
 }
 
 .layout-tipo-denuncia {
