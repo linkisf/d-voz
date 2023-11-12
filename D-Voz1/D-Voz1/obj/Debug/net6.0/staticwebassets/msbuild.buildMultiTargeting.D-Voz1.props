@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\D-Voz1.props" />
+</Project>

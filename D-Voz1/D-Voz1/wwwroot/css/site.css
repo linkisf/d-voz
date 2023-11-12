@@ -1,0 +1,83 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.layout_navbar {
+    background-color: #849E49;
+    height: 80px;
+}
+
+.display-direita {
+    display: flow;
+}
+
+.layout-tipo-denuncia {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.layout-tipo-denuncia-elemento {
+    width: 476px;
+    height: 631px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: rgba(132, 158, 73, 0.20);
+    margin: auto;
+    justify-content: center;    
+    padding-top:100px;
+}
+
+.teste-vetor-anonimo {
+    display: flex;
+    width: 296px;
+    height: 286px;
+    align-items: center;
+    flex-shrink: 0;
+    margin:auto;
+}
+
+.ret-retangulo {
+    width: 387.583px;
+    height: 84px;
+    background: #3D520D;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.borda-direita-redo {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.borda-esquerda-redo {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.nome-tipo-denuncia {
+    color: #FFF;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
