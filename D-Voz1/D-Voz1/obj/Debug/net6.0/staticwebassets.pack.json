@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\D-Voz1.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\css\\denuncia-identificada.css",
+      "PackagePath": "staticwebassets\\css\\denuncia-identificada.css"
+    },
+    {
       "Id": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\css\\escolha-tipo-denuncia.css",
       "PackagePath": "staticwebassets\\css\\escolha-tipo-denuncia.css"
     },
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\imagens\\bt_Denuncie.png",
+      "PackagePath": "staticwebassets\\imagens\\bt_Denuncie.png"
     },
     {
       "Id": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\imagens\\denuncia_anonima.png",

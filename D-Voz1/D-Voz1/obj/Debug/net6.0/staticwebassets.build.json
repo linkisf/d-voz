@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MY65mA5Cu0+mvESGW3asLCj9ZvEXmz9wttgictDZubs=",
+  "Hash": "AqPi8jNTzjRxt7CuCU0rOrp2Ux1K61ArqJzI/eqxeZ0=",
   "Source": "D-Voz1",
   "BasePath": "_content/D-Voz1",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\D-Voz1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\css\\denuncia-identificada.css",
+      "SourceId": "D-Voz1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\",
+      "BasePath": "_content/D-Voz1",
+      "RelativePath": "css/denuncia-identificada.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\denuncia-identificada.css"
     },
     {
       "Identity": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\css\\escolha-tipo-denuncia.css",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\imagens\\bt_Denuncie.png",
+      "SourceId": "D-Voz1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\",
+      "BasePath": "_content/D-Voz1",
+      "RelativePath": "imagens/bt_Denuncie.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\bt_Denuncie.png"
     },
     {
       "Identity": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\D-Voz1\\wwwroot\\imagens\\denuncia_anonima.png",
