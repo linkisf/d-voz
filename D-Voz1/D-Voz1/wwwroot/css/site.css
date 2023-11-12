@@ -23,9 +23,8 @@ body {
 }
 
 .display-direita {
-    display: flex;
-    flex-direction:row;
-
+    float: inline-end;
+    flex-grow: 0;
 }
 
 .layout-tipo-denuncia {
