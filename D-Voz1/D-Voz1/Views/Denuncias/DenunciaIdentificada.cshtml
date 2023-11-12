@@ -1,0 +1,55 @@
+@model D_Voz1.Models.DenunciaIdentificadaModel
+
+@{
+    ViewData["Title"] = "Denúncia Identificada";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="~/css/denuncia-identificada.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div>
+        <div>
+            <div class="form-container">
+                <form asp-action="SubmitReport">
+                    <h2>Denúncia Identificada</h2>
+
+                    <div class="input-container">
+                        <label class="field-label" for="Nome">Nome:</label>
+                        <input asp-for="Nome" type="text" id="Nome" placeholder=" " />
+                    </div>
+                    <div class="input-container">
+                        <label class="field-label" for="RG">RG:</label>
+                        <input asp-for="RG" type="text" id="RG" placeholder=" " />
+                    </div>
+                    <div class="input-container">
+                        <label class="field-label" for="Email">E-mail:</label>
+                        <input asp-for=Email type="text" id="Email" placeholder=" "/>
+                    </div>
+                    <div class="input-container">
+                        <label class="field-label" for="CPF">CPF:</label>
+                        <input asp-for=CPF type="text" id="CPF" placeholder=" " />
+                    </div>
+                    <div class="input-container">
+                        <label class="field-label" for="LocalDenuncia">Local da Denúncia:</label>
+                        <input asp-for=LocalDaDenuncia type="text" id="LocalDenuncia" placeholder=" " />
+                    </div>
+                    <div class="input-container">
+                        <label class="field-label" for="LocalOcorrido">Local do Ocorrido:</label>
+                        <input asp-for=LocalDoOcorrido type="text" id="LocalOcorrido" placeholder=" " />
+                    </div>
+                    <div class="input-container">
+                        <label class="field-label" for="CEP">CEP:</label>
+                        <input asp-for=CEP type="text" id="CEP" placeholder=" " />
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
