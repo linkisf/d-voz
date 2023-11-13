@@ -4,6 +4,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand';
 }
 
 .container {
@@ -13,13 +14,25 @@ body {
     align-items: center;
 }
 
-.botao-denuncie {
-    padding: 8px;
-}
-
 .layout_navbar {
     background-color: #849E49;
     height: 80px;
+}
+
+.nav-link {
+    color: #3D520D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    text-decoration: none;
 }
 
 .display-direita {
