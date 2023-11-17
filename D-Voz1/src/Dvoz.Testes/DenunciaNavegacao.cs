@@ -21,6 +21,7 @@ namespace Dvoz.Testes
             //Assert
             Assert.Contains("Denuncie", driver.PageSource);
         }
+
         [Fact]
         public void AcessandoPaginaDenuncieMenuNav()
         {
@@ -28,6 +29,16 @@ namespace Dvoz.Testes
             driver.Navigate().GoToUrl("http://localhost:7226/");
             driver.Manage().Window.Size = new System.Drawing.Size(1918, 1030);
             driver.FindElement(By.LinkText("Denuncie")).Click();
+        }
+
+        [Fact]
+        public void AcessandoPaginaDenuncieBotaoPrincipalEFormulario()
+        {
+            IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            driver.Navigate().GoToUrl("http://localhost:7226/");
+            driver.Manage().Window.Size = new System.Drawing.Size(1918, 1030);
+            driver.FindElement(By.Id("btn_denuncie")).Click();
+            driver.FindElement(By.CssSelector(".borda-esquerda-redo > .nome-tipo-denuncia")).Click();
         }
     }
 }

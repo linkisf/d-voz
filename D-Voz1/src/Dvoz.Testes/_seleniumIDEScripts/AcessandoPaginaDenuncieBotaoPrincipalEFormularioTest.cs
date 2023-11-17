@@ -25,9 +25,10 @@
 //    driver.Quit();
 //  }
 //  [Fact]
-//  public void AcessandoPaginaDenuncieMenuNav() {
+//  public void AcessandoPaginaDenuncieBotaoPrincipalEFormulario() {
 //    driver.Navigate().GoToUrl("http://localhost:7226/");
 //    driver.Manage().Window.Size = new System.Drawing.Size(1918, 1030);
-//    driver.FindElement(By.LinkText("Denuncie")).Click();
+//    driver.FindElement(By.Id("btn_denuncie")).Click();
+//    driver.FindElement(By.CssSelector(".borda-esquerda-redo > .nome-tipo-denuncia")).Click();
 //  }
 //}
