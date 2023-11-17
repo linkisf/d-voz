@@ -1,0 +1,42 @@
+{
+  "denunciasIdentificadas": [
+    {
+      "id": 1,
+      "Nome": "Lincoln",
+      "RG": 1234567890,
+      "Email": "a@b.c",
+      "CPF": 12345678910,
+      "LocalDaDenuncia": "Rua do Rouxinol, 156",
+      "LocalDoOcorrido": "Rua das patativas",
+      "CEP": 41720052,
+      "TipoDenuncia": "rio",
+      "Anexos": [
+        "imagem.jpg"
+      ],
+      "DescricaoDenuncia": "Registrei uma pessoa jogando produtos químicos no rio"
+    },
+    {
+      "id": 2,
+      "Nome": "Elan",
+      "RG": 10987654321,
+      "Email": "elan@email.com",
+      "CPF": 12345678910,
+      "LocalDaDenuncia": "Rua do Rouxinol, 156",
+      "LocalDoOcorrido": "Rua das patativas",
+      "CEP": 41720052,
+      "TipoDenuncia": "Arvore",
+      "Anexos": [],
+      "DescricaoDenuncia": "Vi queimarem uma arvore"
+    }
+  ],
+  "denunciasAnonimas": [
+    {
+      "id": 1,
+      "LocalDoOcorrido": "Rua das patativas",
+      "CEP": 41720052,
+      "TipoDenuncia": "rio",
+      "Anexos": "imagem.jpg",
+      "DescricaoDenuncia": "Registrei uma pessoa jogando produtos químicos no rio"
+    }
+  ]
+}
