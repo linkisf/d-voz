@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Dvoz.Testes
 {
-    public class Teste_DenunciaNavegacao
+    public class Teste_DenunciaNavegacao: IDisposable
     {
         private IWebDriver driver;
 
@@ -45,6 +45,11 @@ namespace Dvoz.Testes
             navegacaoPO.Navegar("http://localhost:8001");
             navegacaoPO.LinkBtnDenuncia();
             navegacaoPO.LinkBtnFormularioIdentificado();
+        }
+
+        public void Dispose()
+        {
+            driver.Quit();
         }
     }
 }
