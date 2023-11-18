@@ -26,33 +26,40 @@ namespace D_Voz1.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SubmitReport(DenunciaIdentificadaModel denunciaIdentificadaModel)
+        public IActionResult SubmitReport(DenunciaIdentificadaModel denunciaIdentificadaModel)
         {
             var jsonContent = JsonSerializer.Serialize(denunciaIdentificadaModel);
             var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-            try
-            {
-                var response = await _httpClient.PostAsync("http://url/reports", content);
+            Task<HttpResponseMessage> response = EnviarDenunciaOrgaoResponsavel(content);
 
-                if (response.IsSuccessStatusCode)
-                {
-                    return RedirectToAction("Confirmation");
-                }
-                else
-                {
-                    // ViewBag.ErrorMessage = "Mensagem de erro";
-                    return View("DenunciaIdentificada");
-                }
-            }
-            catch (HttpRequestException ex)
+            if (response.Result.IsSuccessStatusCode)
             {
-                ViewBag.ErrorMessage = ex;
+                return RedirectToAction("Confirmacao");
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Mensagem de erro";
                 return View("DenunciaIdentificada");
             }
         }
 
-        public IActionResult Confirmation()
+        public async Task<HttpResponseMessage> EnviarDenunciaOrgaoResponsavel(StringContent denuncia)
+        {
+            try
+            {
+                var response = await _httpClient.PostAsync("http://localhost:3000/denunciasIdentificadas", denuncia);
+
+                return response;                
+            }
+            catch (HttpRequestException ex)
+            {
+                var response = new HttpResponseMessage(System.Net.HttpStatusCode.Gone);
+                return response;
+            }
+        }
+
+        public IActionResult Confirmacao()
         {
             return View();
         }

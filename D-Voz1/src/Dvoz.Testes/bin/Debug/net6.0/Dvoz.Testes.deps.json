@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Dvoz.Testes/1.0.0": {
         "dependencies": {
+          "D-Voz1": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.5.0",
           "Selenium.WebDriver": "4.15.0",
           "Selenium.WebDriver.ChromeDriver": "119.0.6045.10500",
@@ -1069,7 +1070,12 @@
           }
         }
       },
-      "xunit.runner.visualstudio/2.4.5": {}
+      "xunit.runner.visualstudio/2.4.5": {},
+      "D-Voz1/1.0.0": {
+        "runtime": {
+          "D-Voz1.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -1728,6 +1734,11 @@
       "sha512": "sha512-OwHamvBdUKgqsXfBzWiCW/O98BTx81UKzx2bieIOQI7CZFE5NEQZGi8PBQGIKawDW96xeRffiNf20SjfC0x9hw==",
       "path": "xunit.runner.visualstudio/2.4.5",
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    },
+    "D-Voz1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

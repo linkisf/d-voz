@@ -1785,6 +1785,19 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "D-Voz1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/D-Voz1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/D-Voz1.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5690,10 +5703,16 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "D-Voz1/1.0.0": {
+      "type": "project",
+      "path": "../D-Voz1/D-Voz1.csproj",
+      "msbuildProject": "../D-Voz1/D-Voz1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "D-Voz1 >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "Selenium.WebDriver >= 4.15.0",
       "Selenium.WebDriver.ChromeDriver >= 119.0.6045.10500",
@@ -5733,7 +5752,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\src\\D-Voz1\\D-Voz1.csproj": {
+              "projectPath": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\src\\D-Voz1\\D-Voz1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

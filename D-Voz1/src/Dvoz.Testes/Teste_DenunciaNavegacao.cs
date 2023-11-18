@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dvoz.Testes
 {
-    public class DenunciaNavegacao
+    public class Teste_DenunciaNavegacao
     {
         [Fact]
         public void CarregaPaginaInicialVerificaExistenciaLinkDenuncie()

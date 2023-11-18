@@ -105,3 +105,12 @@ C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Pr
 C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\obj\Debug\net6.0\Dvoz.Testes.pdb
 C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\obj\Debug\net6.0\Dvoz.Testes.genruntimeconfig.cache
 C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\obj\Debug\net6.0\ref\Dvoz.Testes.dll
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\D-Voz1.deps.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\D-Voz1.runtimeconfig.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\appsettings.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\D-Voz1.staticwebassets.runtime.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\D-Voz1.exe
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\D-Voz1.dll
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\Dvoz.Testes\bin\Debug\net6.0\D-Voz1.pdb
