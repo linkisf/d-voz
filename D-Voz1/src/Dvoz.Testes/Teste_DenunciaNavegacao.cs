@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Dvoz.Testes.PageObjects;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
@@ -11,34 +12,39 @@ namespace Dvoz.Testes
 {
     public class Teste_DenunciaNavegacao
     {
+        private IWebDriver driver;
+
+        public Teste_DenunciaNavegacao()
+        {
+            driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+        }
+
         [Fact]
         public void CarregaPaginaInicialVerificaExistenciaLinkDenuncie()
-        {
-            //Arrange
-            IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-            //Act
-            driver.Navigate().GoToUrl("http://localhost:7226/");
-            //Assert
-            Assert.Contains("Denuncie", driver.PageSource);
+        {            
+            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
+
+            navegacaoPO.Navegar("http://localhost:8001");
+            navegacaoPO.VerificaExistenciaLinkDenuncie();
         }
 
         [Fact]
         public void AcessandoPaginaDenuncieMenuNav()
         {
-            IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-            driver.Navigate().GoToUrl("http://localhost:7226/");
-            driver.Manage().Window.Size = new System.Drawing.Size(1918, 1030);
-            driver.FindElement(By.LinkText("Denuncie")).Click();
+            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
+
+            navegacaoPO.Navegar("http://localhost:8001");
+            navegacaoPO.LinkDenunciaMenuNav();
         }
 
         [Fact]
         public void AcessandoPaginaDenuncieBotaoPrincipalEFormulario()
         {
-            IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-            driver.Navigate().GoToUrl("http://localhost:7226/");
-            driver.Manage().Window.Size = new System.Drawing.Size(1918, 1030);
-            driver.FindElement(By.Id("btn_denuncie")).Click();
-            driver.FindElement(By.CssSelector(".borda-esquerda-redo > .nome-tipo-denuncia")).Click();
+            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
+
+            navegacaoPO.Navegar("http://localhost:8001");
+            navegacaoPO.LinkBtnDenuncia();
+            navegacaoPO.LinkBtnFormularioIdentificado();
         }
     }
 }
