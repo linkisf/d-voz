@@ -60,6 +60,14 @@ namespace Dvoz.Testes.PageObjects
             driver.FindElement(byBotaoEnviarDenuncia).Click();
         }
 
+        public bool VerificaCampoEmail()
+        {
+            if (driver.FindElement(byInputEmail).GetAttribute("type").Equals("email"))
+                return true;
+
+            return false;
+            
+        }
 
     }
 }

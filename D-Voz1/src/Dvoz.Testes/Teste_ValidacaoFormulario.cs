@@ -42,6 +42,19 @@ namespace Dvoz.Testes
             Assert.Contains("SUCESSO", driver.PageSource);
         }
 
+        [Fact]
+        public void ValidandoCamposFormulario_Email()
+        {
+            //arrange
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+
+            //act
+            bool verificacao = denunciaIdentificadaPO.VerificaCampoEmail();
+
+            //assert
+            Assert.True(verificacao);
+        }
 
     }
 }
