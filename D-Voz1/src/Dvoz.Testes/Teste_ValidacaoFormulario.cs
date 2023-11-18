@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Dvoz.Testes.PageObjects;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,24 @@ namespace Dvoz.Testes
         [Fact]
         public void ValidandoCamposFormulario()
         {
+            //arrange
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+            denunciaIdentificadaPO.PreencherFormulario(
+                "Teste",
+                "0000000000",
+                "teste@teste.com",
+                "00000000000",
+                "teste local da denuncia",
+                "teste local do ocorrido",
+                "00000000"
+                );
 
+            //act 
+            denunciaIdentificadaPO.SubmeteFormulario();
+
+            //assert
+            Assert.Contains("SUCESSO", driver.PageSource);
         }
 
 
