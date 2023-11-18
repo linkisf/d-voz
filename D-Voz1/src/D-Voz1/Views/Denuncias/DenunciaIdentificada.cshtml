@@ -24,7 +24,7 @@
                     <label class="field-label" for="Nome">Nome:</label>
                 </div>
                 <div class="input-container">
-                    <input asp-for="RG" type="text" id="RG" placeholder=" " class="field-input" />
+                    <input asp-for="RG" type="text" id="RG" placeholder=" " class="field-input" pattern="\d{1,9}" maxlength="9" />
                     <label class="field-label" for="RG">RG:</label>
                 </div>
                 <div class="input-container">
@@ -32,7 +32,7 @@
                     <label class="field-label" for="Email">E-mail:</label>
                 </div>
                 <div class="input-container">
-                    <input asp-for=CPF type="text" id="CPF" placeholder=" " class="field-input" />
+                    <input asp-for="CPF" type="text" id="CPF" placeholder=" " class="field-input" pattern="\d{11}" maxlength="11" />
                     <label class="field-label" for="CPF">CPF:</label>
                 </div>
                 <div class="input-container">
@@ -44,12 +44,55 @@
                     <label class="field-label" for="LocalOcorrido">Local do Ocorrido:</label>
                 </div>
                 <div class="input-container">
-                    <input asp-for=CEP type="number" id="CEP" placeholder=" " class="field-input" />
+                    <input asp-for="CEP" type="text" id="CEP" placeholder=" " class="field-input" pattern="\d{1,8}" maxlength="8" />
                     <label class="field-label" for="CEP">CEP:</label>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isNumberKey(evt) {
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+
+            function isNotNumberKey(evt) {
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode >= 48 && charCode <= 57)) {
+                    return false;
+                }
+                return true;
+            }
+
+            document.getElementById('RG').addEventListener('keypress', function (e) {
+                if (!isNumberKey(e)) {
+                    e.preventDefault();
+                }
+            });
+
+            document.getElementById('CPF').addEventListener('keypress', function (e) {
+                if (!isNumberKey(e)) {
+                    e.preventDefault();
+                }
+            });
+
+            document.getElementById('CEP').addEventListener('keypress', function (e) {
+                if (!isNumberKey(e)) {
+                    e.preventDefault();
+                }
+            });
+
+            document.getElementById('Nome').addEventListener('keypress', function (e) {
+                if (!isNotNumberKey(e)) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
 </body>
 </html>

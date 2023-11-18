@@ -56,5 +56,52 @@ namespace Dvoz.Testes
             Assert.True(verificacao);
         }
 
+        [Fact]
+        public void ValidandoCamposFormulario_Nome()
+        {
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+            Assert.True(denunciaIdentificadaPO.VerificaCampoNome());
+        }
+
+        [Fact]
+        public void ValidandoCamposFormulario_RG()
+        {
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+            Assert.True(denunciaIdentificadaPO.VerificaCampoRG());
+        }
+
+        [Fact]
+        public void ValidaCamposFormulario_CPF()
+        {
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+            Assert.True(denunciaIdentificadaPO.VerificaCampoCPF());
+        }
+
+        [Fact]
+        public void ValidaCamposFormulario_LocalDenuncia()
+        {
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+            Assert.True(denunciaIdentificadaPO.VerificaCampoLocalDenuncia());
+        }
+
+        [Fact]
+        public void ValidaCamposFormulario_LocalOcorrido()
+        {
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+            Assert.True(denunciaIdentificadaPO.VerificaCampoLocalOcorrido());
+        }
+
+        [Fact]
+        public void ValidaCamposFormulario_CEP()
+        {
+            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+            denunciaIdentificadaPO.Navegar();
+            Assert.True(denunciaIdentificadaPO.VerificaCampoCEP());
+        }
     }
 }

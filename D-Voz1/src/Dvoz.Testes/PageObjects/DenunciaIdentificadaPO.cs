@@ -1,6 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using System.Reflection;
 
 namespace Dvoz.Testes.PageObjects
 {
@@ -55,7 +53,7 @@ namespace Dvoz.Testes.PageObjects
             driver.FindElement(byInputCEP).SendKeys(cep);
         }
 
-        public void SubmeteFormulario() 
+        public void SubmeteFormulario()
         {
             driver.FindElement(byBotaoEnviarDenuncia).Click();
         }
@@ -66,7 +64,85 @@ namespace Dvoz.Testes.PageObjects
                 return true;
 
             return false;
-            
+
+        }
+
+        public bool VerificaCampoNome()
+        {
+            try
+            {
+                return driver.FindElement(byInputNome).GetAttribute("type").Equals("text");
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public bool VerificaCampoRG()
+        {
+            try
+            {
+                IWebElement campoRG = driver.FindElement(byInputRG);
+                campoRG.SendKeys("testando");
+                return !campoRG.GetAttribute("value").Any(char.IsLetter);
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public bool VerificaCampoCPF()
+        {
+            try
+            {
+                IWebElement campoCPF = driver.FindElement(byInputCPF);
+                campoCPF.SendKeys("testando");
+                return !campoCPF.GetAttribute("value").Any(char.IsLetter);
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public bool VerificaCampoLocalDenuncia()
+        {
+            try
+            {
+                return driver.FindElement(byInputLocalDenuncia).GetAttribute("type").Equals("text");
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public bool VerificaCampoLocalOcorrido()
+        {
+            try
+            {
+                return driver.FindElement(byInputLocalOcorrido).GetAttribute("type").Equals("text");
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public bool VerificaCampoCEP()
+        {
+            try
+            {
+                var campoCEP = driver.FindElement(byInputCEP);
+                campoCEP.SendKeys("testando");
+                return !campoCEP.GetAttribute("value").Any(char.IsLetter); ;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
         }
 
     }
