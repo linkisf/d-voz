@@ -60,11 +60,14 @@ namespace Dvoz.Testes.PageObjects
 
         public bool VerificaCampoEmail()
         {
-            if (driver.FindElement(byInputEmail).GetAttribute("type").Equals("email"))
-                return true;
-
-            return false;
-
+            try
+            {
+                return driver.FindElement(byInputEmail).GetAttribute("type").Equals("email");
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
         }
 
         public bool VerificaCampoNome()
