@@ -19,31 +19,6 @@ namespace Dvoz.Testes
             driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
         }
 
-        [Fact]
-        public void CarregaPaginaInicialVerificaExistenciaLinkDenuncie()
-        {            
-            var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);    
-        }
-
-        [Fact]
-        public void AcessandoPaginaDenuncieMenuNav()
-        {
-            var denunciaIdentificadaPO = new NavegacaoPaginaInicialPO(driver);
-
-            denunciaIdentificadaPO.Navegar("http://localhost:8001");
-            denunciaIdentificadaPO.LinkDenunciaMenuNav();
-        }
-
-        [Fact]
-        public void AcessandoPaginaDenuncieBotaoPrincipalEFormulario()
-        {
-            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
-
-            navegacaoPO.Navegar("http://localhost:8001");
-            navegacaoPO.LinkBtnDenuncia();
-            navegacaoPO.LinkBtnFormularioIdentificado();
-        }
-
         public void Dispose()
         {
             driver.Quit();

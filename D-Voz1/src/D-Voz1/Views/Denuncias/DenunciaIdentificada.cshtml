@@ -20,7 +20,7 @@
         <div class="form-container">
             <form id="formDenunciaIdentificada" asp-action="SubmitReport">
                 <div class="input-container">
-                    <input asp-for="Nome" type="text" id="Nome" placeholder=" " class="field-input" />
+                    <input asp-for="Nome" type="text" id="Nome" placeholder=" " class="field-input" required />
                     <label class="field-label" for="Nome">Nome:</label>
                 </div>
                 <div class="input-container">
@@ -28,11 +28,11 @@
                     <label class="field-label" for="RG">RG:</label>
                 </div>
                 <div class="input-container">
-                    <input asp-for=Email type="email" id="Email" placeholder=" " class="field-input" />
+                    <input asp-for=Email type="email" id="Email" placeholder=" " class="field-input" required />
                     <label class="field-label" for="Email">E-mail:</label>
                 </div>
                 <div class="input-container">
-                    <input asp-for="CPF" type="text" id="CPF" placeholder=" " class="field-input" pattern="\d{11}" maxlength="11" />
+                    <input asp-for="CPF" type="text" id="CPF" placeholder=" " class="field-input" pattern="\d{11}" maxlength="11" required />
                     <label class="field-label" for="CPF">CPF:</label>
                 </div>
                 <div class="input-container">
@@ -40,13 +40,15 @@
                     <label class="field-label" for="LocalDenuncia">Local da Denúncia:</label>
                 </div>
                 <div class="input-container">
-                    <input asp-for=LocalDoOcorrido type="text" id="LocalOcorrido" placeholder=" " class="field-input" />
+                    <input asp-for=LocalDoOcorrido type="text" id="LocalOcorrido" placeholder=" " class="field-input" required />
                     <label class="field-label" for="LocalOcorrido">Local do Ocorrido:</label>
                 </div>
+
                 <div class="input-container">
                     <input asp-for="CEP" type="text" id="CEP" placeholder=" " class="field-input" pattern="\d{1,8}" maxlength="8" />
                     <label class="field-label" for="CEP">CEP:</label>
                 </div>
+
                 <button type="submit">Enviar</button>
             </form>
         </div>
