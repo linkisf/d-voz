@@ -14,6 +14,7 @@ namespace Dvoz.Testes.PageObjects
         private By linkBtnDenuncia;
         private By linkBtnFormularioIdentificado;
         private By botaoDenuncieNaHome;
+        private By formDenunciaIdentificada;
 
         public NavegacaoPaginaInicialPO(IWebDriver driver)
         {
@@ -22,6 +23,7 @@ namespace Dvoz.Testes.PageObjects
             linkBtnDenuncia = By.Id("btn_denuncie");
             linkBtnFormularioIdentificado = By.Id("btnDenunciaIdentificada");
             botaoDenuncieNaHome = By.Id("link_denuncie");
+            formDenunciaIdentificada = By.Id("formDenunciaIdentificada");
         }
 
         public void Navegar(string url)
@@ -46,16 +48,23 @@ namespace Dvoz.Testes.PageObjects
         }
 
         public void VerificaExistenciaLinkDenuncie()
-        {
-            
+        {   
             Assert.Contains("Denuncie", driver.PageSource);
         }
 
-
-        public void ClicarBotaoDenuncie()
+        public void ClicarBotaoDenuncieNaHome()
         {
             driver.FindElement(botaoDenuncieNaHome).Click();
-            Assert.EndsWith("Denuncie", driver.Url);
+        }
+
+        public void EstaNaPaginaFormDenunciaIdentificada()
+        {
+            Assert.EndsWith("DenunciaIdentificada", driver.Url);
+        }
+
+        public void ContemFormularioDenunciaIdentificada()
+        {
+            driver.FindElement(formDenunciaIdentificada);
         }
     }
 }

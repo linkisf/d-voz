@@ -80,6 +80,8 @@ namespace Dvoz.Testes
             Assert.True(denunciaIdentificadaPO.VerificaCampoCPF());
         }
 
+      
+
         [Fact]
         public void ValidaCamposFormulario_LocalDenuncia()
         {

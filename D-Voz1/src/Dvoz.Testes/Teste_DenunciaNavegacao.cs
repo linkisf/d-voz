@@ -12,39 +12,23 @@ namespace Dvoz.Testes
 {
     public class Teste_DenunciaNavegacao: IDisposable
     {
-        private IWebDriver driver;
+        private readonly IWebDriver driver;
+        private readonly NavegacaoPaginaInicialPO navegacaoPO;
 
         public Teste_DenunciaNavegacao()
         {
             driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            navegacaoPO = new NavegacaoPaginaInicialPO(driver);
         }
 
         [Fact]
-        public void CarregaPaginaInicialVerificaExistenciaLinkDenuncie()
-        {            
-            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
-
-            navegacaoPO.Navegar("http://localhost:8001");
-            navegacaoPO.VerificaExistenciaLinkDenuncie();
-        }
-
-        [Fact]
-        public void AcessandoPaginaDenuncieMenuNav()
+        public void AcessarPaginaFormDenunciaIdentificada()
         {
-            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
-
-            navegacaoPO.Navegar("http://localhost:8001");
-            navegacaoPO.LinkDenunciaMenuNav();
-        }
-
-        [Fact]
-        public void AcessandoPaginaDenuncieBotaoPrincipalEFormulario()
-        {
-            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
-
-            navegacaoPO.Navegar("http://localhost:8001");
-            navegacaoPO.LinkBtnDenuncia();
+            // Navegar para pagina de escolha de denuncia
+            navegacaoPO.Navegar("http://localhost:8001/PaginaInicial/Denuncie");
             navegacaoPO.LinkBtnFormularioIdentificado();
+            navegacaoPO.EstaNaPaginaFormDenunciaIdentificada();
+            navegacaoPO.ContemFormularioDenunciaIdentificada();
         }
 
         public void Dispose()

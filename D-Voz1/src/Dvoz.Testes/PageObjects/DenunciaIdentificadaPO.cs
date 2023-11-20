@@ -110,6 +110,11 @@ namespace Dvoz.Testes.PageObjects
             }
         }
 
+        public bool CPFEhValido(String cpf)
+        {
+            return true;
+        }
+
         public bool VerificaCampoLocalDenuncia()
         {
             try
