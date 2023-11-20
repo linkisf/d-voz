@@ -9,12 +9,13 @@ namespace Dvoz.Testes.PageObjects
 {
     public class NavegacaoPaginaInicialPO
     {
-        private IWebDriver driver;
-        private By linkDenunciaMenuNav;
-        private By linkBtnDenuncia;
-        private By linkBtnFormularioIdentificado;
-        private By botaoDenuncieNaHome;
-        private By formDenunciaIdentificada;
+        private readonly IWebDriver driver;
+        private readonly By linkDenunciaMenuNav;
+        private readonly By linkBtnDenuncia;
+        private readonly By linkBtnFormularioIdentificado;
+        private readonly By imagemDenunciaIdentificada;
+        private readonly By botaoDenuncieNaHome;
+        private readonly By formDenunciaIdentificada;
 
         public NavegacaoPaginaInicialPO(IWebDriver driver)
         {
@@ -22,6 +23,7 @@ namespace Dvoz.Testes.PageObjects
             linkDenunciaMenuNav = By.LinkText("Denuncie");
             linkBtnDenuncia = By.Id("btn_denuncie");
             linkBtnFormularioIdentificado = By.Id("btnDenunciaIdentificada");
+            imagemDenunciaIdentificada = By.Id("denunciaIdentificadaImagem");
             botaoDenuncieNaHome = By.Id("link_denuncie");
             formDenunciaIdentificada = By.Id("formDenunciaIdentificada");
         }
@@ -45,6 +47,11 @@ namespace Dvoz.Testes.PageObjects
         public void LinkBtnFormularioIdentificado()
         {
             driver.FindElement(linkBtnFormularioIdentificado).Click();
+        }
+
+        public void ClicarImagemFormularioIdentificado()
+        {
+            driver.FindElement(imagemDenunciaIdentificada).Click();
         }
 
         public void VerificaExistenciaLinkDenuncie()

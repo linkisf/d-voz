@@ -1,12 +1,7 @@
 ﻿using Dvoz.Testes.PageObjects;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dvoz.Testes
 {
@@ -26,7 +21,7 @@ namespace Dvoz.Testes
         {
             // Navegar para pagina de escolha de denuncia
             navegacaoPO.Navegar("http://localhost:8001/PaginaInicial/Denuncie");
-            navegacaoPO.LinkBtnFormularioIdentificado();
+            navegacaoPO.ClicarImagemFormularioIdentificado();
             navegacaoPO.EstaNaPaginaFormDenunciaIdentificada();
             navegacaoPO.ContemFormularioDenunciaIdentificada();
         }
