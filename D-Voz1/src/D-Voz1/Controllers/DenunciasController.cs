@@ -35,6 +35,12 @@ namespace D_Voz1.Controllers
 
             if (response.Result.IsSuccessStatusCode)
             {
+                var responseString = response.Result.Content.ReadAsStringAsync().Result;
+                var responseJson = JsonSerializer.Deserialize<JsonElement>(responseString);
+
+                var id = responseJson.GetProperty("id").GetInt32().ToString();
+
+                ViewBag.Id = id;
                 return RedirectToAction("Confirmacao");
             }
             else
@@ -50,7 +56,7 @@ namespace D_Voz1.Controllers
             {
                 var response = await _httpClient.PostAsync("http://localhost:3000/denunciasIdentificadas", denuncia);
 
-                return response;                
+                return response;
             }
             catch (HttpRequestException ex)
             {
