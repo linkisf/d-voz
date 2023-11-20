@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Detalhes da Denúncia";
+}
+
+@model AcompanharDenunciaModel
+
+<head>
+    <link rel="stylesheet" href="~/css/denunciadetails.css" asp-append-version="true" />
+</head>
+
+<div class="page-container">
+<h2>Detalhes da Denúncia</h2>
+
+<div class="container">
+    <dl class="row">
+        <dt class="col-sm-3">ID</dt>
+        <dd class="col-sm-9">@Model.id</dd>
+
+        <dt class="col-sm-3">Nome</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+
+        <dt class="col-sm-3">RG</dt>
+        <dd class="col-sm-9">@Model.RG</dd>
+
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+
+        <dt class="col-sm-3">CPF</dt>
+        <dd class="col-sm-9">@Model.CPF</dd>
+
+        <dt class="col-sm-3">Local da Denúncia</dt>
+        <dd class="col-sm-9">@Model.LocalDaDenuncia</dd>
+
+        <dt class="col-sm-3">Local do Ocorrido</dt>
+        <dd class="col-sm-9">@Model.LocalDoOcorrido</dd>
+
+        <dt class="col-sm-3">CEP</dt>
+        <dd class="col-sm-9">@Model.CEP</dd>
+
+        <dt class="col-sm-3">Tipo de Denúncia</dt>
+        <dd class="col-sm-9">@Model.TipoDenuncia</dd>
+
+        <dt class="col-sm-3">Anexos</dt>
+        <dd class="col-sm-9">
+            @foreach (var anexo in Model.Anexos)
+            {
+                <p>@anexo</p>
+            }
+        </dd>
+
+        <dt class="col-sm-3">Descrição da Denúncia</dt>
+        <dd class="col-sm-9">@Model.DescricaoDenuncia</dd>
+    </dl>
+</div>
+</div>

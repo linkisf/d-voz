@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Minha Denúncia";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/acompanhardenuncia.css" asp-append-version="true" />
+</head>
+
+
+
+<div class="container">
+    <h1>ID da Denúncia</h1>
+    <p>Insira o número do ID da denúncia que você deseja verificar abaixo:</p>
+    <form method="post" asp-action="SearchReport">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" />
+        <button type="submit">Verificar</button>
+    </form>
+</div>

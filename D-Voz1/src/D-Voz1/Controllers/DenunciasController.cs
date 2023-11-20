@@ -25,6 +25,11 @@ namespace D_Voz1.Controllers
             return View();
         }
 
+        public IActionResult AcompanharDenuncia()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult SubmitReport(DenunciaIdentificadaModel denunciaIdentificadaModel)
         {
@@ -68,6 +73,39 @@ namespace D_Voz1.Controllers
         public IActionResult Confirmacao()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SearchReport(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                ViewBag.ErrorMessage = "ID da denúncia é necessário";
+                return View("AcompanharDenuncia");
+            }
+
+            try
+            {
+                var response = await _httpClient.GetAsync($"http://localhost:3000/denunciasIdentificadas/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var denunciaDetails = JsonSerializer.Deserialize<AcompanharDenunciaModel>(responseContent);
+
+                    return View("DenunciaDetails", denunciaDetails);
+                }
+                else
+                {
+                    ViewBag.ErrorMessage = $"Erro ao buscar a denúncia com ID: {id}";
+                    return View("AcompanharDenuncia");
+                }
+            }
+            catch (HttpRequestException)
+            {
+                ViewBag.ErrorMessage = "Erro de rede ao tentar buscar a denúncia";
+                return View("AcompanharDenuncia");
+            }
         }
     }
 }
