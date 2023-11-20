@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = D_Voz1
 build_property.RootNamespace = D_Voz1
-build_property.ProjectDir = C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\
+build_property.ProjectDir = C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1
+build_property.MSBuildProjectDirectory = C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/Denuncias/Confirmacao.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/Denuncias/Confirmacao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVudW5jaWFzXENvbmZpcm1hY2FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/Denuncias/DenunciaAnonima.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/Denuncias/DenunciaAnonima.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVudW5jaWFzXERlbnVuY2lhQW5vbmltYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/Denuncias/DenunciaIdentificada.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/Denuncias/DenunciaIdentificada.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVudW5jaWFzXERlbnVuY2lhSWRlbnRpZmljYWRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/PaginaInicial/Denuncie.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/PaginaInicial/Denuncie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hSW5pY2lhbFxEZW51bmNpZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/PaginaInicial/Index.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/PaginaInicial/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hSW5pY2lhbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/Shared/Error.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/_ViewImports.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/_ViewStart.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/Unifacs/7º_Semestre/Gestão e qualidade de software/A3/Projeto/D-Voz1/src/D-Voz1/Views/Shared/_Layout.cshtml]
+[C:/Users/deyan/source/repos/d-voz/D-Voz1/src/D-Voz1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-eg1m3yugcz

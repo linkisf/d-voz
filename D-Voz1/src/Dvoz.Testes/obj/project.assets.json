@@ -5722,23 +5722,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Am_r\\.nuget\\packages\\": {},
-    "D:\\Arquivo de Prgramas\\VS Components\\Shared Components\\NuGetPackages": {}
+    "C:\\Users\\deyan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\src\\Dvoz.Testes\\Dvoz.Testes.csproj",
+      "projectUniqueName": "C:\\Users\\deyan\\source\\repos\\d-voz\\D-Voz1\\src\\Dvoz.Testes\\Dvoz.Testes.csproj",
       "projectName": "Dvoz.Testes",
-      "projectPath": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\src\\Dvoz.Testes\\Dvoz.Testes.csproj",
-      "packagesPath": "C:\\Users\\Am_r\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\src\\Dvoz.Testes\\obj\\",
+      "projectPath": "C:\\Users\\deyan\\source\\repos\\d-voz\\D-Voz1\\src\\Dvoz.Testes\\Dvoz.Testes.csproj",
+      "packagesPath": "C:\\Users\\deyan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\deyan\\source\\repos\\d-voz\\D-Voz1\\src\\Dvoz.Testes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Arquivo de Prgramas\\VS Components\\Shared Components\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Am_r\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\deyan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5747,14 +5747,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\src\\D-Voz1\\D-Voz1.csproj": {
-              "projectPath": "C:\\Users\\Am_r\\Desktop\\Unifacs\\7º_Semestre\\Gestão e qualidade de software\\A3\\Projeto\\D-Voz1\\src\\D-Voz1\\D-Voz1.csproj"
+            "C:\\Users\\deyan\\source\\repos\\d-voz\\D-Voz1\\src\\D-Voz1\\D-Voz1.csproj": {
+              "projectPath": "C:\\Users\\deyan\\source\\repos\\d-voz\\D-Voz1\\src\\D-Voz1\\D-Voz1.csproj"
             }
           }
         }
@@ -5814,7 +5815,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
