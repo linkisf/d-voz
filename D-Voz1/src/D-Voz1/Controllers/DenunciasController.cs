@@ -81,7 +81,7 @@ namespace D_Voz1.Controllers
             if (string.IsNullOrWhiteSpace(id))
             {
                 ViewBag.ErrorMessage = "ID da denúncia é necessário";
-                return View("AcompanharDenuncia");
+                return View("DenunciaError");
             }
 
             try
@@ -97,14 +97,12 @@ namespace D_Voz1.Controllers
                 }
                 else
                 {
-                    ViewBag.ErrorMessage = $"Erro ao buscar a denúncia com ID: {id}";
-                    return View("AcompanharDenuncia");
+                    return View("DenunciaError");
                 }
             }
             catch (HttpRequestException)
             {
-                ViewBag.ErrorMessage = "Erro de rede ao tentar buscar a denúncia";
-                return View("AcompanharDenuncia");
+                return View("DenunciaError");
             }
         }
     }

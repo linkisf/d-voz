@@ -1,0 +1,21 @@
+﻿.error-icon {
+    margin-bottom: 20px;
+}
+
+    .error-icon img {
+        max-width: 370px;
+        max-height: 370px;
+        width: auto;
+        height: auto;
+    }
+
+
+.error-message {
+    background-color: #D9D9D9;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
