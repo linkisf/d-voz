@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
+using System.Reflection;
 
 namespace Dvoz.Testes
 {
@@ -16,7 +17,7 @@ namespace Dvoz.Testes
 
         public Teste_AcompanharDenuncia()
         {
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             wait = new(driver, TimeSpan.FromSeconds(10));
         }
 

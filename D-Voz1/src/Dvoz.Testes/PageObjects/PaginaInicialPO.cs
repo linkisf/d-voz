@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Dvoz.Testes.PageObjects
 {
-    public class NavegacaoPaginaInicialPO
+    public class PaginaInicialPO
     {
         private readonly IWebDriver driver;
         private readonly By linkBtnDenuncia;
 
-        public NavegacaoPaginaInicialPO(IWebDriver driver)
+        public PaginaInicialPO(IWebDriver driver)
         {
             this.driver = driver;
-            this.linkBtnDenuncia = By.Id("btn_denuncie");
+            this.linkBtnDenuncia = By.Id("link_denuncie");
         }
 
         public void Navegar(string url)
@@ -28,6 +28,5 @@ namespace Dvoz.Testes.PageObjects
         {
             driver.FindElement(linkBtnDenuncia).Click();
         }
-
     }
 }

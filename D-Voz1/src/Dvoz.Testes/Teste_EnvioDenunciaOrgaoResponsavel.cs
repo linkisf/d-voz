@@ -14,9 +14,7 @@ namespace Dvoz.Testes
         [Fact]
         public void EnviarDenunciaOrgaoResponsavel()
         {
-            HttpClient _httpClient = new HttpClient();
-
-            DenunciasController submit = new DenunciasController(_httpClient);
+            DenunciasController submit = new DenunciasController();
 
             DenunciaIdentificadaModel denuncia = new DenunciaIdentificadaModel
             {

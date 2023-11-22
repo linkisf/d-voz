@@ -13,6 +13,7 @@ namespace Dvoz.Testes.PageObjects
         private By byInputLocalOcorrido;
         private By byInputCEP;
         private By byBotaoEnviarDenuncia;
+        private By formDenunciaIdentificada;
 
 
 
@@ -27,6 +28,7 @@ namespace Dvoz.Testes.PageObjects
             byInputLocalOcorrido = By.Id("LocalOcorrido");
             byInputCEP = By.Id("CEP");
             byBotaoEnviarDenuncia = By.CssSelector("button[type=submit]");
+            formDenunciaIdentificada = By.Id("formDenunciaIdentificada");
         }
 
         public void Navegar()
@@ -151,6 +153,16 @@ namespace Dvoz.Testes.PageObjects
             {
                 return false;
             }
+        }
+
+        public void EstaNaPaginaFormDenunciaIdentificada()
+        {
+            Assert.EndsWith("DenunciaIdentificada", driver.Url);
+        }
+
+        public void ContemFormularioDenunciaIdentificada()
+        {
+            driver.FindElement(formDenunciaIdentificada);
         }
 
     }

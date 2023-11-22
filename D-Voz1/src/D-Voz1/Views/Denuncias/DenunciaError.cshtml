@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Erro";
+    @model string
 }
 
 <head>
@@ -11,6 +12,6 @@
         <img src="~/imagens/error.png" alt="Error" />
     </div>
     <div class="error-message">
-        ID não encontrado
+        <p>@Model</p>
     </div>
 </div>

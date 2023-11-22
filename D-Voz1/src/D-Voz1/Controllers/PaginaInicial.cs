@@ -9,7 +9,7 @@ namespace D_Voz1.Controllers
             return View();
         }
 
-        public IActionResult Denuncie()
+        public IActionResult EscolhaTipoDenuncia()
         {
             return View();
         }

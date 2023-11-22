@@ -29,37 +29,6 @@ C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Pr
 C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\D-Voz1\obj\Debug\net6.0\D-Voz1.pdb
 C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\D-Voz1\obj\Debug\net6.0\D-Voz1.genruntimeconfig.cache
 C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\D-Voz1\obj\Debug\net6.0\ref\D-Voz1.dll
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\appsettings.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.staticwebassets.runtime.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.exe
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.deps.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.runtimeconfig.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.dll
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.pdb
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.csproj.AssemblyReference.cache
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.AssemblyInfoInputs.cache
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.AssemblyInfo.cs
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.csproj.CoreCompileInputs.cache
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.RazorAssemblyInfo.cache
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.RazorAssemblyInfo.cs
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.D-Voz1.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.build.D-Voz1.props
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.D-Voz1.props
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.D-Voz1.props
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\scopedcss\bundle\D-Voz1.styles.css
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\scopedcss\projectbundle\D-Voz1.bundle.scp.css
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.dll
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\refint\D-Voz1.dll
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.pdb
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.genruntimeconfig.cache
-C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\ref\D-Voz1.dll
 C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\bin\Debug\net6.0\appsettings.json
 C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.staticwebassets.runtime.json
@@ -91,3 +60,34 @@ C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\obj\Debug\net6.0\refint\D-Vo
 C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.pdb
 C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.genruntimeconfig.cache
 C:\Users\deyan\source\repos\d-voz\D-Voz1\src\D-Voz1\obj\Debug\net6.0\ref\D-Voz1.dll
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\appsettings.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.staticwebassets.runtime.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.exe
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.deps.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.runtimeconfig.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.dll
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\bin\Debug\net6.0\D-Voz1.pdb
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.csproj.AssemblyReference.cache
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.AssemblyInfoInputs.cache
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.AssemblyInfo.cs
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.csproj.CoreCompileInputs.cache
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.RazorAssemblyInfo.cache
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.RazorAssemblyInfo.cs
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.D-Voz1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.build.D-Voz1.props
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.D-Voz1.props
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.D-Voz1.props
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\scopedcss\bundle\D-Voz1.styles.css
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\scopedcss\projectbundle\D-Voz1.bundle.scp.css
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.dll
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\refint\D-Voz1.dll
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.pdb
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\D-Voz1.genruntimeconfig.cache
+C:\Users\Am_r\Desktop\Unifacs\7º_Semestre\Gestão e qualidade de software\A3\Projeto\D-Voz1\src\D-Voz1\obj\Debug\net6.0\ref\D-Voz1.dll

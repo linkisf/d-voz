@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Dvoz.Testes.PageObjects
 {
-    public class NavegacaoPaginaInicialPO
+    public class EscolhaTipoDenunciaPO
     {
-        private readonly IWebDriver driver;
-        private readonly By linkBtnDenuncia;
+        IWebDriver driver;
+        private readonly By linkBtnFormularioIdentificado;
 
-        public NavegacaoPaginaInicialPO(IWebDriver driver)
+        public EscolhaTipoDenunciaPO(IWebDriver driver)
         {
             this.driver = driver;
-            this.linkBtnDenuncia = By.Id("btn_denuncie");
+            this.linkBtnFormularioIdentificado = By.Id("btnDenunciaIdentificada");
         }
 
         public void Navegar(string url)
@@ -24,10 +24,9 @@ namespace Dvoz.Testes.PageObjects
             //driver.Manage().Window.Size = new System.Drawing.Size(1918, 1030);
         }
 
-        public void LinkBtnDenuncia()
+        public void LinkBtnFormularioIdentificado()
         {
-            driver.FindElement(linkBtnDenuncia).Click();
+            driver.FindElement(linkBtnFormularioIdentificado).Click();
         }
-
     }
 }

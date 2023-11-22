@@ -22,10 +22,10 @@ namespace Dvoz.Testes
         [Fact]
         public void AcessandoPaginaDenuncieMenuNav()
         {
-            var navegacaoPO = new NavegacaoPaginaInicialPO(driver);
+            var navegacaoPO = new MenuNavegacaoPO(driver);
 
             navegacaoPO.Navegar("http://localhost:8001");
-            navegacaoPO.ClicarBotaoDenuncieNaHome();
+            navegacaoPO.LinkDenuncieMenuNav();
         }
 
         public void Dispose()

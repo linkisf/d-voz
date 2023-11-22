@@ -1,6 +1,7 @@
 ﻿using Dvoz.Testes.PageObjects;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,12 @@ namespace Dvoz.Testes
     public class Teste_ValidacaoFormulario
     {
         private IWebDriver driver;
+        private readonly WebDriverWait wait;
 
         public Teste_ValidacaoFormulario()
         {
             driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            wait = new(driver, TimeSpan.FromSeconds(10));
         }
 
         [Fact]
@@ -39,6 +42,11 @@ namespace Dvoz.Testes
             denunciaIdentificadaPO.SubmeteFormulario();
 
             //assert
+            //wait.Until(drv => drv.FindElement(By.CssSelector("div.page-title")).Displayed);
+
+            //var errorMessageElement = driver.FindElement(By.CssSelector("div.page-title"));
+
+            //Assert.Equal(" SUCESSO ", errorMessageElement.Text);
             Assert.Contains("SUCESSO", driver.PageSource);
         }
 

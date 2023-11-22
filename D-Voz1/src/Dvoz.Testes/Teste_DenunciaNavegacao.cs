@@ -19,11 +19,18 @@ namespace Dvoz.Testes
         [Fact]
         public void AcessarPaginaFormDenunciaIdentificada()
         {
+            var pPaginaIncialPO = new NavegacaoPaginaInicialPO(driver);
+            var pEscolhaDenunicaPO = new EscolhaTipoDenunciaPO(driver);
+            var pDenunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
+
             // Navegar para pagina de escolha de denuncia
-            navegacaoPO.Navegar("http://localhost:8001/PaginaInicial/Denuncie");
-            navegacaoPO.ClicarImagemFormularioIdentificado();
-            navegacaoPO.EstaNaPaginaFormDenunciaIdentificada();
-            navegacaoPO.ContemFormularioDenunciaIdentificada();
+            pPaginaIncialPO.Navegar("http://localhost:8001");
+            pPaginaIncialPO.LinkBtnDenuncia();
+
+            pEscolhaDenunicaPO.LinkBtnFormularioIdentificado();
+
+            pDenunciaIdentificadaPO.EstaNaPaginaFormDenunciaIdentificada();
+            pDenunciaIdentificadaPO.ContemFormularioDenunciaIdentificada();
         }
 
         public void Dispose()

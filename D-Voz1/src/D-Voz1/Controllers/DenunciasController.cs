@@ -9,12 +9,12 @@ namespace D_Voz1.Controllers
 {
     public class DenunciasController : Controller
     {
-        private readonly HttpClient _httpClient;
+        private readonly HttpClient? _httpClient;
 
-        public DenunciasController(HttpClient httpClient)
+        public DenunciasController()
         {
-            _httpClient = httpClient;
-        }
+            _httpClient = new HttpClient();
+        }        
 
         public IActionResult DenunciaIdentificada()
         {
@@ -33,26 +33,35 @@ namespace D_Voz1.Controllers
         [HttpPost]
         public IActionResult SubmitReport(DenunciaIdentificadaModel denunciaIdentificadaModel)
         {
-            var jsonContent = JsonSerializer.Serialize(denunciaIdentificadaModel);
-            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
-            Task<HttpResponseMessage> response = EnviarDenunciaOrgaoResponsavel(content);
-
-            if (response.Result.IsSuccessStatusCode)
+            if(ValidarCPF(denunciaIdentificadaModel.CPF))
             {
-                var responseString = response.Result.Content.ReadAsStringAsync().Result;
-                var responseJson = JsonSerializer.Deserialize<JsonElement>(responseString);
+                var jsonContent = JsonSerializer.Serialize(denunciaIdentificadaModel);
+                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-                var id = responseJson.GetProperty("id").GetInt32().ToString();
+                Task<HttpResponseMessage> response = EnviarDenunciaOrgaoResponsavel(content);
 
-                ViewBag.Id = id;
-                return RedirectToAction("Confirmacao");
+                if (response.Result.IsSuccessStatusCode)
+                {
+                    var responseString = response.Result.Content.ReadAsStringAsync().Result;
+                    var responseJson = JsonSerializer.Deserialize<JsonElement>(responseString);
+
+                    var id = responseJson.GetProperty("id").GetInt32().ToString();
+
+                    ViewBag.Id = id;
+                    return RedirectToAction("Confirmacao");
+                }
+                else
+                {
+                    ViewBag.ErrorMessage = "Mensagem de erro";
+                    return View("DenunciaIdentificada");
+                }
             }
             else
             {
-                ViewBag.ErrorMessage = "Mensagem de erro";
-                return View("DenunciaIdentificada");
+                return View("DenunciaError", "CPF Invalido!");
             }
+
+            
         }
 
         public async Task<HttpResponseMessage> EnviarDenunciaOrgaoResponsavel(StringContent denuncia)
@@ -104,6 +113,45 @@ namespace D_Voz1.Controllers
             {
                 return View("DenunciaError");
             }
+        }
+
+        public bool ValidarCPF(string cpf)
+        {
+            // Remover caracteres não numéricos
+            cpf = new string(cpf.Where(char.IsDigit).ToArray());
+
+            // Verificar se o CPF tem 11 dígitos
+            if (cpf.Length != 11)
+            {
+                return false;
+            }
+
+            // Calcular o primeiro dígito verificador
+            int soma = 0;
+            for (int i = 0; i < 9; i++)
+            {
+                soma += int.Parse(cpf[i].ToString()) * (10 - i);
+            }
+            int resto = soma % 11;
+            int digitoVerificador1 = (resto < 2) ? 0 : 11 - resto;
+
+            // Verificar o primeiro dígito verificador
+            if (digitoVerificador1 != int.Parse(cpf[9].ToString()))
+            {
+                return false;
+            }
+
+            // Calcular o segundo dígito verificador
+            soma = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                soma += int.Parse(cpf[i].ToString()) * (11 - i);
+            }
+            resto = soma % 11;
+            int digitoVerificador2 = (resto < 2) ? 0 : 11 - resto;
+
+            // Verificar o segundo dígito verificador
+            return digitoVerificador2 == int.Parse(cpf[10].ToString());
         }
     }
 }
