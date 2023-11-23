@@ -85,9 +85,9 @@ namespace D_Voz1.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SearchReport(string id)
+        public async Task<IActionResult> SearchReport(string inputIdDenuncia)
         {
-            if (string.IsNullOrWhiteSpace(id))
+            if (string.IsNullOrWhiteSpace(inputIdDenuncia))
             {
                 ViewBag.ErrorMessage = "ID da denúncia é necessário";
                 return View("DenunciaError");
@@ -95,7 +95,7 @@ namespace D_Voz1.Controllers
 
             try
             {
-                var response = await _httpClient.GetAsync($"http://localhost:3000/denunciasIdentificadas/{id}");
+                var response = await _httpClient.GetAsync($"http://localhost:3000/denunciasIdentificadas/{inputIdDenuncia}");
 
                 if (response.IsSuccessStatusCode)
                 {

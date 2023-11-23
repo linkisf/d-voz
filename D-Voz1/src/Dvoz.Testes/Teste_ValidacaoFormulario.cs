@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Dvoz.Testes
 {
-    public class Teste_ValidacaoFormulario
+    public class Teste_ValidacaoFormulario : IDisposable
     {
         private IWebDriver driver;
         private readonly WebDriverWait wait;
@@ -81,9 +81,7 @@ namespace Dvoz.Testes
             var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
             denunciaIdentificadaPO.Navegar();
             Assert.True(denunciaIdentificadaPO.VerificaCampoCPF());
-        }
-
-      
+        }      
 
         [Fact]
         public void ValidaCamposFormulario_LocalDenuncia()
@@ -107,6 +105,11 @@ namespace Dvoz.Testes
             var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
             denunciaIdentificadaPO.Navegar();
             Assert.True(denunciaIdentificadaPO.VerificaCampoCEP());
+        }
+
+        public void Dispose()
+        {
+            driver.Quit();
         }
     }
 }

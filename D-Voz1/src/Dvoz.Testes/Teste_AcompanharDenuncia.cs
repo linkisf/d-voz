@@ -7,10 +7,11 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
 using System.Reflection;
+using Dvoz.Testes.PageObjects;
 
 namespace Dvoz.Testes
 {
-    public class Teste_AcompanharDenuncia
+    public class Teste_AcompanharDenuncia : IDisposable
     {
         private readonly IWebDriver driver;
         private readonly WebDriverWait wait;
@@ -27,15 +28,13 @@ namespace Dvoz.Testes
             try
             {
                 //ARRANGE
-                driver.Navigate().GoToUrl("http://localhost:8001/Denuncias/AcompanharDenuncia");
+                var acompanharDenunciaPO = new AcompanharDenunciaPO(driver);
 
-                IWebElement inputField = driver.FindElement(By.Id("id"));
-                IWebElement submitButton = driver.FindElement(By.XPath("//button[@type='submit']"));
-
-                inputField.SendKeys("1");
 
                 //ACT
-                submitButton.Click();
+                acompanharDenunciaPO.Navegar();
+                acompanharDenunciaPO.PreencherCampoAcompanharDenuncia("1");
+                acompanharDenunciaPO.ClicarBotaoVerificar();
 
                 //ASSERT
                 wait.Until(drv => drv.FindElement(By.CssSelector("div.page-container h2")).Text.Contains("Detalhes da Denúncia"));
@@ -52,6 +51,7 @@ namespace Dvoz.Testes
                 driver.Quit();
             }
         }
+        
 
         [Fact]
         public void AcompanharDenuncia_Erro()
@@ -59,15 +59,13 @@ namespace Dvoz.Testes
             try
             {
                 //ARRANGE
-                driver.Navigate().GoToUrl("http://localhost:8001/Denuncias/AcompanharDenuncia");
+                var acompanharDenunciaPO = new AcompanharDenunciaPO(driver);
 
-                IWebElement inputField = driver.FindElement(By.Id("id"));
-                IWebElement submitButton = driver.FindElement(By.XPath("//button[@type='submit']"));
-
-                inputField.SendKeys("id_inválido");
 
                 //ACT
-                submitButton.Click();
+                acompanharDenunciaPO.Navegar();
+                acompanharDenunciaPO.PreencherCampoAcompanharDenuncia("0000000");
+                acompanharDenunciaPO.ClicarBotaoVerificar();
 
                 //ASSERT
                 wait.Until(drv => drv.FindElement(By.CssSelector("div.error-container div.error-message")).Displayed);
@@ -84,6 +82,11 @@ namespace Dvoz.Testes
             {
                 driver.Quit();
             }
+        }
+
+        public void Dispose()
+        {
+            driver.Quit();
         }
     }
 }

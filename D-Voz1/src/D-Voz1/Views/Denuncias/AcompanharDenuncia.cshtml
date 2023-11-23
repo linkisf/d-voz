@@ -13,7 +13,7 @@
     <p>Insira o número do ID da denúncia que você deseja verificar abaixo:</p>
     <form method="post" asp-action="SearchReport">
         <label for="id">ID:</label>
-        <input type="text" id="id" name="id" />
-        <button type="submit">Verificar</button>
+        <input type="text" id="inputIdDenuncia" name="inputIdDenuncia" class="field-input" pattern="\d{1,9}" maxlength="9" />
+        <button type="submit" id="btnVerificarDenuncia">Verificar</button>
     </form>
 </div>
