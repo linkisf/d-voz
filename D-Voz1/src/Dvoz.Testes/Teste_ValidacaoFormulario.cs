@@ -25,7 +25,7 @@ namespace Dvoz.Testes
         [Fact]
         public void ValidandoCamposFormulario()
         {
-            //arrange
+            //ARRANGE
             var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
             denunciaIdentificadaPO.Navegar();
             denunciaIdentificadaPO.PreencherFormulario(
@@ -38,29 +38,24 @@ namespace Dvoz.Testes
                 "00000000"
                 );
 
-            //act 
+            //ACT 
             denunciaIdentificadaPO.SubmeteFormulario();
 
-            //assert
-            //wait.Until(drv => drv.FindElement(By.CssSelector("div.page-title")).Displayed);
-
-            //var errorMessageElement = driver.FindElement(By.CssSelector("div.page-title"));
-
-            //Assert.Equal(" SUCESSO ", errorMessageElement.Text);
+            //ASSERT            
             Assert.Contains("SUCESSO", driver.PageSource);
         }
 
         [Fact]
         public void ValidandoCamposFormulario_Email()
         {
-            //arrange
+            //ARRANGE
             var denunciaIdentificadaPO = new DenunciaIdentificadaPO(driver);
             denunciaIdentificadaPO.Navegar();
 
-            //act
+            //ACT
             bool verificacao = denunciaIdentificadaPO.VerificaCampoEmail();
 
-            //assert
+            //ASSERT
             Assert.True(verificacao);
         }
 

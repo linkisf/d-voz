@@ -26,15 +26,18 @@ namespace Dvoz.Testes
         {
             try
             {
+                //ARRANGE
                 driver.Navigate().GoToUrl("http://localhost:8001/Denuncias/AcompanharDenuncia");
 
                 IWebElement inputField = driver.FindElement(By.Id("id"));
                 IWebElement submitButton = driver.FindElement(By.XPath("//button[@type='submit']"));
 
                 inputField.SendKeys("1");
+
+                //ACT
                 submitButton.Click();
 
-
+                //ASSERT
                 wait.Until(drv => drv.FindElement(By.CssSelector("div.page-container h2")).Text.Contains("Detalhes da Denúncia"));
                 var idElement = driver.FindElement(By.XPath("//dd[@class='col-sm-9'][1]"));
 
@@ -55,14 +58,18 @@ namespace Dvoz.Testes
         {
             try
             {
+                //ARRANGE
                 driver.Navigate().GoToUrl("http://localhost:8001/Denuncias/AcompanharDenuncia");
 
                 IWebElement inputField = driver.FindElement(By.Id("id"));
                 IWebElement submitButton = driver.FindElement(By.XPath("//button[@type='submit']"));
 
                 inputField.SendKeys("id_inválido");
+
+                //ACT
                 submitButton.Click();
 
+                //ASSERT
                 wait.Until(drv => drv.FindElement(By.CssSelector("div.error-container div.error-message")).Displayed);
 
                 var errorMessageElement = driver.FindElement(By.CssSelector("div.error-container div.error-message"));

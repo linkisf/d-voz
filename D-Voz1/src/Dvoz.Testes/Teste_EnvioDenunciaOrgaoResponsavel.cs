@@ -14,6 +14,7 @@ namespace Dvoz.Testes
         [Fact]
         public void EnviarDenunciaOrgaoResponsavel()
         {
+            //ARRANGE
             DenunciasController submit = new DenunciasController();
 
             DenunciaIdentificadaModel denuncia = new DenunciaIdentificadaModel
@@ -30,8 +31,10 @@ namespace Dvoz.Testes
             var jsonContent = JsonSerializer.Serialize(denuncia);
             var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
+            //ACT
             var retorno = submit.EnviarDenunciaOrgaoResponsavel(content);
 
+            //ASSERT
             Assert.Contains("201", retorno.Result.ToString());
 
         }
